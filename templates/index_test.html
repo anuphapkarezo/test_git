@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My app for Test</title>
+    {% load static %}
+    <script src="{% static 'js/Bootstrap/jquery-3.6.0.js' %}"></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="{% static 'css/proj_test_connect/proj_test_page1_my_name.css' %}">
+    <script src="{% static 'js/proj_test_connect/proj_test_page1_my_name.js' %}"></script>
+
+    <!-- การ link ในส่วนของ Bootstrap => Js/css -->
+    <script type="text/javascript" src="{% static 'js/Bootstrap/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/Bootstrap/bootstrap.min.css' %}">
+
+    <h1>Test connect</h1>
+    <div id="my_name1" class="bg_color">
+        My name is Anuphap Karezo.
+    </div>
+    <div id="my_name2">
+        My name is Anupab kareesor.
+    </div>
+
+    <div>
+        <button class="btn btn-primary" id="btn_submit_my_name1" onclick=click_myname()>Submit</button>
+        <button class="btn btn-warning" id="btn_submit_my_name2">Ready Submit</button>
+    </div>
+
+</body>
+
+</html>

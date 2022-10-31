@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+    color: burlywood;
+}
+
+#my_name1 {
+    background-color: bisque;
+    border: 1px solid black;
+    color: blue;
+    padding-left: 15px;
+}
+
+#my_name2 {
+    background-color: cadetblue;
+    width: 500px;
+    border: 1px solid blue;
+    color: burlywood;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+#btn_submit_my_name1,
+#btn_submit_my_name2 {
+    font-weight: bold;
+    height: 50px;
+    width: 150px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
