@@ -1,0 +1,84 @@
+.lbl_title {
+    background-color: burlywood;
+    border: 1px solid black;
+    width: 450px;
+    height: 50px;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 20px;
+    padding-top: 8px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.add_member {
+    width: 450px;
+    height: 270px;
+    background-color: lightyellow;
+    border: 1px solid black;
+    margin-left: 15px;
+}
+
+#lbl_id {
+    padding-left: 60px;
+    padding-top: 20px;
+}
+
+#lbl_name {
+    padding-left: 97px;
+    padding-top: 10px;
+}
+
+#lbl_surname {
+    padding-left: 77px;
+    padding-top: 10px;
+}
+
+#txt_id,
+#txt_name,
+#txt_surname {
+    margin-left: 5px;
+    color: blue;
+}
+
+.btn_add,
+#btn_upload_excel {
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+#btn_save,
+#btn_cancel {
+    width: 80px;
+}
+
+.tb_member_add {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid black;
+}
+
+#th_no {
+    width: 80px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+#th_data {
+    width: 150px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+#uploadFile_add_member {
+    padding-top: 10px;
+    padding-left: 27px;
+}
+
+#lbl_user {
+    margin-left: 120px;
+}

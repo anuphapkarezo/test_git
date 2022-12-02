@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Programming</title>
+    {% load static %}
+    <script src="{% static 'js/Bootstrap/jquery-3.6.0.js' %}"></script>
+</head>
+
+<body>
+    <!-- การ link ในส่วนของ Bootstrap => Js/css -->
+    <script type="text/javascript" src="{% static 'js/Bootstrap/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/Bootstrap/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/proj_test_connect/Page_login.css' %}">
+    <script src="{% static 'js/proj_test_connect/Page_login.js' %}"></script>
+
+    <div class="main_class">
+        <div class="title">
+            <div class="lbl_title" for="">Login Programming</div>
+            <div class="login_page">
+                <div>
+                    <label for="" class="ele_login" id="lbl_user">Username :</label>
+                    <input type="text" class="ele_login" id="txt_user">
+                </div>
+                <div>
+                    <label for="" class="ele_login" id="lbl_pass">Password :</label>
+                    <input type="password" class="ele_login" id="txt_pass">
+                </div>
+                <div class="btn_login">
+                    <button class="btn btn-sm btn-primary" id="btn_save">Login</button>
+                    <button class="btn btn-sm btn-warning" id="btn_cancel">Cancel</button>
+                </div>
+                <select id="opt_case" style="width: 250px; margin-left: 30px; margin-top: 20px;">
+                   
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

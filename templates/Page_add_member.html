@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Member</title>
+    {% load static %}
+    <script src="{% static 'js/Bootstrap/jquery-3.6.0.js' %}"></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="{% static 'css/proj_test_connect/Page_add_member.css' %}">
+    <script src="{% static 'js/proj_test_connect/Page_add_member.js' %}"></script>
+
+    <!-- การ link ในส่วนของ Bootstrap => Js/css -->
+    <script type="text/javascript" src="{% static 'js/Bootstrap/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/Bootstrap/bootstrap.min.css' %}">
+
+    <div class="main_class">
+        <div class="title">
+            <div class="lbl_title" for="">Register member Program</div>
+            <div class="add_member">
+                <div>
+                    <label for="" class="ele_add_member" id="lbl_id">Member ID :</label>
+                    <input type="text" class="ele_add_member" id="txt_id" maxlength="5">
+                    <button id="btn_search">Search</button>
+                </div>
+                <div>
+                    <label for="" class="ele_add_member" id="lbl_name">Name :</label>
+                    <input type="text" class="ele_add_member" id="txt_name">
+                </div>
+                <div>
+                    <label for="" class="ele_add_member" id="lbl_surname">Surname :</label>
+                    <input type="text" class="ele_add_member" id="txt_surname">
+                </div>
+                <div class="btn_add">
+                    <button id="btn_save">Save</button>
+                    <!-- <input id="btn_save" type="button" value="Save"> -->
+                    <button id="btn_cancel">Cancel</button>
+                    <button id="btn_delete">Delete member</button>
+                </div>
+                <form action="save_member_excel_to_database" method="post" enctype="multipart/form-data">
+                    <div class="upload_file">
+                        <input type="file" name="excel_data" id="uploadFile_add_member" accept=".xls,.xlsx" style="margin-left: 50px;">
+                    </div>
+                    <button id="btn_upload_excel">Upload file</button>
+                    <label id="lbl_user" for="">User : </label>
+                    <label id="get_user" for="">.....</label>
+                </form>
+                <!-- <div class="upload_file">
+                    <input type="file" name="excel_data" id="uploadFile_add_member" accept=".xls,.xlsx" style="margin-left: 50px;">
+
+                </div>
+                <button id="btn_upload_excel">Upload file</button> -->
+            </div>
+            <div class="tb_member_add">
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="th_no">No.</th>
+                            <th id="th_data">Member ID</th>
+                            <th id="th_data">Member Name</th>
+                            <th id="th_data">Member Surname</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tb_waste_item_master_list">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

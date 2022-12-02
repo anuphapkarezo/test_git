@@ -1,0 +1,47 @@
+.lbl_title {
+    background-color: burlywood;
+    border: 1px solid black;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 20px;
+    padding-top: 8px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.login_page {
+    width: 350px;
+    height: 200px;
+    background-color: lightyellow;
+    border: 1px solid black;
+    margin-left: 15px;
+}
+
+#lbl_user {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+#lbl_pass {
+    padding-left: 35px;
+    padding-top: 10px;
+}
+
+#txt_user,
+#txt_pass {
+    margin-left: 5px;
+    color: blue;
+}
+
+#btn_save,
+#btn_cancel {
+    margin-top: 10px;
+    width: 80px;
+    font-weight: bold;
+}
+
+#btn_save {
+    margin-left: 145px;
+}
